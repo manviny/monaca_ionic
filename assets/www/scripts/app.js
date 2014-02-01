@@ -13,6 +13,16 @@ angular.module('patrimonio24App',[
       templateUrl: "templates/home.html",
       controller: 'HomeCtrl'
     })
+    .state('municipio', {
+      url: "/municipio",
+      templateUrl: "templates/municipio.html",
+      controller: 'MunicipioCtrl'
+    })    
+    .state('lits', {
+      url: "/lugares-de-interes",
+      templateUrl: "templates/lugares-de-interes.html",
+      controller: 'LitsCtrl'
+    })    
     .state('about', {
       url: "/about",
       templateUrl: "templates/about.html",
