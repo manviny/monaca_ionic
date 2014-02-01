@@ -5,13 +5,14 @@ angular.module('patrimonio24App')
   $http.get(  'http://patrimonio24.com/municipios/poblacion/lliria.json',{ cache:false } ).success(function (response) { 
     $scope.lits = response.lits;   
     console.log($scope.lits);
+    // alert($scope.lits)
   })
 
   $scope.myTitle = 'Home';
   $scope.leftButtons = [
     { 
       type: 'button-stable button-clear',
-      content: '<i class="icon ion-navicon"></i>',
+      content: '<i class="icon ion-navicon-round"></i>',
       tap: function(e) {
       	$scope.sideMenuController.toggleLeft();
       }
@@ -20,7 +21,7 @@ angular.module('patrimonio24App')
   $scope.rightButtons = [
     { 
       type: 'button-clear',
-      content: 'Edit',
+      content: '<i class="icon ion-android-settings"></i>',
       tap: function(e) {
       	$scope.sideMenuController.toggleRight();
       }
