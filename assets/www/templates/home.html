@@ -2,7 +2,22 @@
 
     <content has-header="true" padding="true">
    
-	
+
+
+	<!-- listado de lits: start -->
+	<div class="list card" ng-repeat="lit in lits" >
+	  <div class="item item-thumbnail-left">
+	    <img src="http://patrimonio24.com/municipios/thumbs-small/{{lit.thumbnail}}">
+	    <h2>{{lit.title}}</h2>
+	    <p>{{lit.horario}}</p>
+	  </div>
+	  <a class="item item-icon-left assertive" href="#">
+	    <i class="icon ion-music-note"></i>
+	    Start listening
+	  </a>	  
+	</div>
+	<!-- listado de lits: end -->
+
 	<!-- listado de lits: start -->
 	<div class="list">
 	    <a ng-repeat="lit in lits" class="item item-thumbnail-left" href="#">
