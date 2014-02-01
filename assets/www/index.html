@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <script src="plugins/plugin-loader.js"></script>
+    <link rel="stylesheet" href="plugins/plugin-loader.css">
+    
+    <!-- ionic css -->
+    <link href="css/ionic.css" rel="stylesheet">  
+    <link href="css/myionic.css" rel="stylesheet">  
+    
+    <!-- ionic/angularjs scripts -->
+    <script src="js/ionic.js"></script>
+    <script src="js/angular/angular.js"></script>
+    <script src="js/angular/angular-animate.js"></script>
+    <script src="js/angular/angular-route.js"></script>
+    <script src="js/angular/angular-touch.js"></script>
+    <script src="js/angular/angular-sanitize.js"></script>
+    <script src="js/angular-ui/angular-ui-router.js"></script>
+    <script src="js/angular/angular-resource.js"></script> 
+    <script src="js/ionic-angular.js"></script>
+    
+
+    <script src="scripts/app.js"></script>
+
+    <!-- controllers -->
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/home.js"></script>
+    <script src="scripts/controllers/about.js"></script>
+    <script src="scripts/controllers/contact.js"></script>
+    <script src="scripts/controllers/list.js"></script>
+    <script src="scripts/controllers/list.item.js"></script>
+
+</head>
+<body ng-app="patrimonio24App">
+   
+<side-menus>
+  <!-- Center content -->
+  <pane side-menu-content>
+
+	  <!-- The nav bar that will be updated as we navigate -->
+	  <nav-bar animation="nav-title-slide-ios7" 
+	           type="bar-dark" 
+	           back-button-type="button-icon" 
+	           back-button-icon="ion-arrow-left-c"></nav-bar>
+
+	  <!-- where the initial view template will be rendered -->
+	  <nav-view animation="slide-left-right"></nav-view>
+
+  </pane>
+
+  <!-- Left menu -->
+  <side-menu side="left">
+
+<div class="list">
+		  <div class="item item-divider">
+		    menú
+		  </div>  
+
+          <a class="item item-icon-left" href="#/contact">
+            <i class="icon ion-email"></i>
+            Check mail
+          </a>
+        
+          <a class="item item-icon-left item-icon-right" href="#">
+            <i class="icon ion-chatbubble-working"></i>
+            Call Ma
+            <i class="icon ion-ios7-telephone-outline"></i>
+          </a>
+        
+          <a class="item item-icon-left" href="#">
+            <i class="icon ion-mic-a"></i>
+            Record album
+            <span class="item-note">
+              Grammy
+            </span>
+          </a>
+        
+          <a class="item item-icon-left" href="#">
+            <i class="icon ion-person-stalker"></i>
+            Friends
+            <span class="badge badge-assertive">0</span>
+          </a>
+
+		  <div class="item item-divider">
+		    divisor
+		  </div>    
+
+          <div class="item item-button-right">
+            Call Ma
+            <button class="button button-positive">
+              <i class="icon ion-ios7-telephone"></i>
+            </button>
+          </div>    
+
+        </div>	
+  </side-menu>
+
+  <!-- Right menu -->
+  <side-menu side="right">
+<div class="list">
+		  <div class="item item-divider">
+		    idiomas
+		  </div>  
+
+          <a class="item item-icon-left" href="#">
+            Castelano
+          </a>
+        
+          <a class="item item-icon-left item-icon-right" href="#">
+            Valenciano
+          </a>
+        
+          <a class="item item-icon-left" href="#">
+            Inglés
+          </a>
+        
+          <a class="item item-icon-left" href="#">
+            Francés
+          </a>
+
+        </div>
+  </side-menu>
+
+</side-menus>
+
+
+ 
+
+</body>
+</html>
