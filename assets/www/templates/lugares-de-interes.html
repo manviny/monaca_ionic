@@ -1,0 +1,37 @@
+  <view title="myTitle"  left-buttons="leftButtons" right-buttons="rightButtons">
+
+    <content has-header="true" padding="true">
+   
+
+
+	<!-- listado de lits: start -->
+	<div class="list card" ng-repeat="lit in lits" >
+		<a class="item item-icon-left positive" href="#/municipio/{{municipio.name}}/lugar-de-interes/{{item.id}}">
+	    	<i class="icon ion-music-note"></i>
+	    	{{lit.title}}
+	  	</a>	 
+	  	<div class="item item-thumbnail-left">
+	    	<img src="http://patrimonio24.com/municipios/thumbs-small/{{lit.thumbnail}}">
+	    	<h2 class="assertive">{{lit.distance}} km</h2>
+	    	<h2 class="balanced">{{lit.horario}} km</h2>
+	  	</div>
+ 
+	</div>
+	<!-- listado de lits: end -->
+
+
+
+	<!-- listado de lits: start -->
+<!-- 	<div class="list">
+	    <a ng-repeat="lit in lits" class="item item-thumbnail-left" href="#">
+	      <img src="http://patrimonio24.com/municipios/thumbs-small/{{lit.thumbnail}}">
+	      <h2>{{lit.title}}</h2>
+	      <i class="icon ion-ios7-location"></i>
+	      <p>{{lit.horario}}</p>
+	    </a>
+	</div> -->
+	<!-- listado de lits: end -->
+
+
+    </content>
+  </view>
