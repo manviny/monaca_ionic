@@ -2,107 +2,10 @@
 
     <content has-header="true" padding="true">
    
-
-
-	<!-- caja busqueda: start -->
-	<div class="list list-inset">
-	  <label class="item item-input">
-	    <i class="icon ion-search placeholder-icon"></i>
-	    <input id="search" ng-model="search.title" type="text" placeholder="Buscar...">
-	  </label>
-	</div>
-	<!-- caja busqueda: end -->
-
-
-	<div class="row" ng-repeat="lit in lits">
-
-  		<div class="col">
-	  		<div class="list card" ng-show="{{lits[$index*2].title}}">
-
-	  		  <div class="item">
-			    <h2>{{lits[$index*2].title}}</h2>
-			    <p>{{lits[$index*2].horario}}</p>
-			  </div>
-
-			  <div class="item item-body">
-			    <img class="full-image" src="http://patrimonio24.com/municipios/thumbs-small/{{lits[$index*2].thumbnail}}">
-			    <p>{{lits[$index*2].descripcion}}</p>
-			    <p>
-			      <a href="#" class="subdued">1 Like</a>
-			      <a href="#" class="subdued">5 Comments</a>
-			    </p>
-			  </div>
-
-			  <div class="item tabs tabs-secondary tabs-icon-left">
-			    <a class="tab-item" href="#">
-			      <i class="icon ion-thumbsup"></i>
-			      Like
-			    </a>
-			    <a class="tab-item" href="#">
-			      <i class="icon ion-chatbox"></i>
-			      Comment
-			    </a>
-			    <a class="tab-item" href="#">
-			      <i class="icon ion-share"></i>
-			      Share
-			    </a>
-			  </div>
-	  		</div>
-  			
-  		</div>
-  		<div class="col">
-			<div class="list card" ng-show="{{lits[$index*2].title}}">
-
-	  		  <div class="item">
-			    <h2>{{lits[$index*2+1].title}}</h2>
-			    <p>{{lits[$index*2+1].horario}}</p>
-			  </div>
-
-			  <div class="item item-body">
-			    <img class="full-image" src="http://patrimonio24.com/municipios/thumbs-small/{{lits[$index*2+1].thumbnail}}">
-			    <p>{{lits[$index*2+1].descripcion}}</p>
-			    <p>
-			      <a href="#" class="subdued">1 Like</a>
-			      <a href="#" class="subdued">5 Comments</a>
-			    </p>
-			  </div>
-
-			  <div class="item tabs tabs-secondary tabs-icon-left">
-			    <a class="tab-item" href="#">
-			      <i class="icon ion-thumbsup"></i>
-			      Like
-			    </a>
-			    <a class="tab-item" href="#">
-			      <i class="icon ion-chatbox"></i>
-			      Comment
-			    </a>
-			    <a class="tab-item" href="#">
-			      <i class="icon ion-share"></i>
-			      Share
-			    </a>
-			  </div>
-	  		</div>
-  			
-  		</div>
-
-	</div>
-
-
+	
 	<!-- listado de lits: start -->
 	<div class="list">
-	    <a ng-repeat="lit in lits  | filter:search:strict" class="item item-thumbnail-left" href="#">
-	      <img src="http://patrimonio24.com/municipios/thumbs-small/{{lit.thumbnail}}">
-	      <h2>{{lit.title}}</h2>
-	      <i class="icon ion-ios7-location"></i>
-	      <p>{{lit.horario}}</p>
-	    </a>
-	</div>
-	<!-- listado de lits: end -->
-
-
-	<!-- listado de lits: start -->
-	<div class="list">
-	    <a ng-repeat="lit in lits  | filter:search:strict" class="item item-thumbnail-left" href="#">
+	    <a ng-repeat="lit in lits" class="item item-thumbnail-left" href="#">
 	      <img src="http://patrimonio24.com/municipios/thumbs-small/{{lit.thumbnail}}">
 	      <h2>{{lit.title}}</h2>
 	      <i class="icon ion-ios7-location"></i>

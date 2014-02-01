@@ -7,7 +7,7 @@ angular.module('patrimonio24App')
     console.log($scope.lits);
   })
 
-  $scope.myTitle = 'Patrimonio24';
+  $scope.myTitle = 'Home';
   $scope.leftButtons = [
     { 
       type: 'button-stable button-clear',
