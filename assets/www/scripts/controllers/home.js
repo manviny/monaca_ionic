@@ -1,6 +1,11 @@
 'use strict';
 angular.module('patrimonio24App')
-.controller('HomeCtrl', function($scope) {
+.controller('HomeCtrl', function($scope, $http) {
+
+  $http.get(  'http://patrimonio24.com/municipios/poblacion/lliria.json',{ cache:false } ).success(function (response) { 
+    $scope.lits = response.lits;   
+    console.log($scope.lits);
+  })
 
   $scope.myTitle = 'Home';
   $scope.leftButtons = [
