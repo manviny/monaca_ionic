@@ -3,7 +3,7 @@
  * Copyright 2014 Drifty Co.
  * http://drifty.com/
  *
- * Ionic, v0.9.21
+ * Ionic, v{{ VERSION }}
  * A powerful HTML5 mobile app framework.
  * http://ionicframework.com/
  *
@@ -6594,6 +6594,3 @@ a.button {
   top: 96px; }
 .platform-android .title {
   line-height: 48px; }
-
-
-
