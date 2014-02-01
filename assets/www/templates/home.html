@@ -1,21 +1,19 @@
   <view title="myTitle"  left-buttons="leftButtons" right-buttons="rightButtons">
 
-    <content has-header="true" padding="true">
+    <content has-header="true" padding="true" id="home">
    
-		<div class="list card">
+        <div id="intro">
+            <img src="img/logo.png" width="75" height="75" class="logo">
+            <h1 class="title">Patrimonio<br>24</h1>
+            <p class="sub clearfix">La historia en tu mano</p>
+            <a transition="slide" href="begin.html" class="dark-cta dark-button" role="button">Navegar &#8594;</a>
+            <p class="caption">Web: <a href="http://patrimonio24.com">patrimonio24.com</a><br>&nbsp;</p>
+        </div>
 
-		  <div class="item item-avatar">
-		    <h2>Patrimonio 24</h2>
-		    <p>La historia en tu mano</p>
-		  </div>
-
-		  <div class="item item-image">
-		    <img src="img/portada-logo.jpg">
-		  </div>
-
-
-		</div>
-
-
+        <a href="#" class="btn large" ng-click="getLocation();">Get Location</a>
+        <a href="#" class="btn large" ng-click="beep();">Beep</a>
+        <a href="#" class="btn large" ng-click="deviceInfo();">info</a>
+        
+        
     </content>
   </view>

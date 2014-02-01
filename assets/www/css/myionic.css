@@ -23,4 +23,39 @@ border-color: #636363;
    background-image:      -o-linear-gradient(top, #586EA7, #314975) !important;
 }
 
+#home {
+  background: url(../img/portada-logo.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #fff;
+}
+#intro {
+  padding: 80px 40px 40px;
+}
+.title {
+  float: left;
+  color: #fff;
+  font-size: 2.5em;
+  line-height: 0.9em;
+  text-shadow: 0.05em 0.05em 0.14em black;
+}
+.caption a{color: #fff};
+.sub {
+  line-height: 0.9em;
+  text-shadow: 0.1em 0.1em 0.2em black;
+}
+.logo {
+  float: left;
+}
 
+/*boton navegar de la pantalla de inicio*/
+.dark-cta, .light-cta {
+font-weight: 500;
+color: #fff;
+text-shadow: 0 -1px rgba(0,0,0,0.36);
+background-color: #288edf;
+border: 1px solid #143250;
+box-shadow: inset 0 1px rgba(255,255,255,0.36);
+}

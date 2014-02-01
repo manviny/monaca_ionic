@@ -27,6 +27,35 @@ angular.module('patrimonio24App')
       }
     }
   ]
+  
+$scope.getLocation = function() {
+    var suc = function(p) {
+        alert(p.coords.latitude + " " + p.coords.longitude);
+    };
+    var locFail = function() {
+    };
+    navigator.geolocation.getCurrentPosition(suc, locFail);
+};
+
+$scope.beep = function() {
+    var my_media = new Media("beep.wav",
+        // success callback
+        function() {
+            console.log("playAudio():Audio Success");
+        },
+        // error callback
+        function(err) {
+            console.log("playAudio():Audio Error: "+err);
+    }).play();
+};
+
+
+$scope.deviceInfo = function() {
+    // console.log(device.platform,device.version,device.uuid,device.name,screen.width,screen.height,screen.colorDepth);
+    console.log(device.uuid);
+
+};
+
 
   console.log('HomeCtrl');
 })
