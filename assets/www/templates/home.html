@@ -51,7 +51,7 @@
   			
   		</div>
   		<div class="col">
-			<div class="list card" ng-show="{{lits[$index*2+1].title}}">
+			<div class="list card" ng-show="{{lits[$index*2].title}}">
 
 	  		  <div class="item">
 			    <h2>{{lits[$index*2+1].title}}</h2>
@@ -88,16 +88,27 @@
 	</div>
 
 
-
 	<!-- listado de lits: start -->
-<!-- 	<div class="list">
+	<div class="list">
 	    <a ng-repeat="lit in lits  | filter:search:strict" class="item item-thumbnail-left" href="#">
 	      <img src="http://patrimonio24.com/municipios/thumbs-small/{{lit.thumbnail}}">
 	      <h2>{{lit.title}}</h2>
 	      <i class="icon ion-ios7-location"></i>
 	      <p>{{lit.horario}}</p>
 	    </a>
-	</div> -->
+	</div>
+	<!-- listado de lits: end -->
+
+
+	<!-- listado de lits: start -->
+	<div class="list">
+	    <a ng-repeat="lit in lits  | filter:search:strict" class="item item-thumbnail-left" href="#">
+	      <img src="http://patrimonio24.com/municipios/thumbs-small/{{lit.thumbnail}}">
+	      <h2>{{lit.title}}</h2>
+	      <i class="icon ion-ios7-location"></i>
+	      <p>{{lit.horario}}</p>
+	    </a>
+	</div>
 	<!-- listado de lits: end -->
 
 
